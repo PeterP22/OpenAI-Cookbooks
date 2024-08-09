@@ -1,22 +1,38 @@
-# Simple Python Agent Workflow by Peter Preketes 
+# AI-Powered Analytical and Conversational Agents by Peter Preketes
 
-## Overview
+This repository contains three Jupyter notebooks demonstrating various applications of AI-powered agents using the OpenAI API. These notebooks showcase data analysis, multi-agent workflows, and simulated conversations between public figures.
 
-This repository contains a Jupyter notebook that demonstrates a simple Python agent workflow using the OpenAI API. The agent is designed to generate Python code based on user queries, execute the code, and validate it using automatically generated test cases.
+## Notebooks
 
-Originally developed using the Mistral AI API, this project has been ported to utilise the latest OpenAI API, showcasing the flexibility and adaptability of the workflow.
+### 1. Simple Python Agent Workflow
 
-## Features
+This notebook demonstrates a basic workflow for generating and executing Python code based on user queries.
 
-- Generates Python functions based on user queries using OpenAI's GPT-4o model
-- Automatically creates test cases for the generated functions
-- Executes and validates the generated code
-- Implements a retry mechanism for improved reliability
-- Provides detailed logging for debugging and transparency
+- **Features:**
+  - Generates Python functions based on user queries
+  - Automatically creates test cases
+  - Executes and validates the generated code
+  - Implements a retry mechanism for improved reliability
 
-## Requirements
+### 2. Data Analytical Multi-Agent Workflow
 
-- Python 3.10+
-- OpenAI Python library
-- python-dotenv
-- Jupyter Notebook
+This notebook showcases a more complex workflow involving multiple AI agents to perform data analysis on the World Happiness Report dataset.
+
+- **Agents:**
+  - Planning Agent: Creates a comprehensive data analysis plan
+  - Python Agent: Generates and executes code based on the plan
+  - Summarization Agent: Produces a final analysis report
+
+- **Features:**
+  - Loads and analyzes real-world data
+  - Demonstrates coordination between multiple specialized AI agents
+  - Provides in-depth statistical analysis and insights
+
+### 3. Conversation Agent Simulator
+
+This notebook simulates entertaining conversations between two public figures: Donald Trump and Elon Musk.
+
+- **Features:**
+  - Mimics the speaking styles and personalities of Trump and Musk
+  - Generates back-and-forth dialogues on various topics
+  - Showcases the ability to maintain context in multi-turn conversations
