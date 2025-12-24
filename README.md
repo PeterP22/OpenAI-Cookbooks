@@ -1,38 +1,79 @@
-# AI-Powered Analytical and Conversational Agents by Peter Preketes
+# OpenAI API Cookbook
 
-This repository contains three Jupyter notebooks demonstrating various applications of AI-powered agents using the OpenAI API. These notebooks showcase data analysis, multi-agent workflows, and simulated conversations between public figures.
+Production-ready patterns for OpenAI APIs with working Python code examples.
 
 ## Notebooks
 
-### 1. Simple Python Agent Workflow
+### 1. Code Generation Agent
 
-This notebook demonstrates a basic workflow for generating and executing Python code based on user queries.
+Automatically generate, test, and execute Python code from natural language queries.
 
-- **Features:**
-  - Generates Python functions based on user queries
-  - Automatically creates test cases
-  - Executes and validates the generated code
-  - Implements a retry mechanism for improved reliability
+**Features:**
+- Function generation from plain English descriptions
+- Automatic test case creation and validation
+- Retry mechanism for improved reliability
+- Self-correcting code execution
 
-### 2. Data Analytical Multi-Agent Workflow
+**Example:**
+```
+Query: "Write a function to find the nth Fibonacci number"
+→ Generates function + test cases + executes validation
+```
 
-This notebook showcases a more complex workflow involving multiple AI agents to perform data analysis on the World Happiness Report dataset.
+### 2. Multi-Agent Data Analysis
 
-- **Agents:**
-  - Planning Agent: Creates a comprehensive data analysis plan
-  - Python Agent: Generates and executes code based on the plan
-  - Summarization Agent: Produces a final analysis report
+Coordinated AI agents for comprehensive data analysis workflows on real datasets.
 
-- **Features:**
-  - Loads and analyzes real-world data
-  - Demonstrates coordination between multiple specialized AI agents
-  - Provides in-depth statistical analysis and insights
+**Agent Architecture:**
+```
+User Query → Planning Agent → Python Agent → Summarization Agent → Final Report
+```
 
-### 3. Conversation Agent Simulator
+| Agent | Role |
+|-------|------|
+| **Planning Agent** | Creates comprehensive analysis strategy |
+| **Python Agent** | Generates and executes analytical code |
+| **Summarization Agent** | Produces final insights report |
 
-This notebook simulates entertaining conversations between two public figures: Donald Trump and Elon Musk.
+**Demo Dataset:** World Happiness Report - statistical analysis and insights
 
-- **Features:**
-  - Mimics the speaking styles and personalities of Trump and Musk
-  - Generates back-and-forth dialogues on various topics
-  - Showcases the ability to maintain context in multi-turn conversations
+### 3. Conversation Simulator
+
+Simulate engaging dialogues between personas with context retention across turns.
+
+**Features:**
+- Persona-specific speaking styles and viewpoints
+- Multi-turn context maintenance
+- Dynamic topic exploration
+- Entertaining and educational simulations
+
+## Quick Start
+
+```bash
+# Install dependencies
+pip install openai pandas jupyter
+
+# Set your API key
+export OPENAI_API_KEY=your_key_here
+
+# Launch notebooks
+jupyter notebook
+```
+
+## Requirements
+
+- Python 3.8+
+- OpenAI API key
+- pandas (for data analysis notebook)
+- Jupyter Notebook
+
+## Tech Stack
+
+- **LLM**: GPT-4 / GPT-4-Turbo
+- **API**: OpenAI Python SDK
+- **Data**: pandas, numpy
+- **Environment**: Jupyter Notebooks
+
+## License
+
+MIT
